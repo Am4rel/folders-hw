@@ -1,0 +1,45 @@
+.folder {
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.folder-title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.folder-title:hover {
+    cursor: pointer;
+}
+
+.folder-title::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    background-image: url("../images/folder_black_24dp.svg");
+}
+
+.folder[data-state='open']::before{
+    content: "";
+    position: absolute;
+    left: -24px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/keyboard_arrow_down_black_24dp.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.folder[data-state='closed']::before{
+    content: "";
+    position: absolute;
+    left: -24px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/keyboard_arrow_right_black_24dp.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}

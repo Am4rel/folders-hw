@@ -1,0 +1,20 @@
+@import "./styles/file.css";
+@import "./styles/folder.css";
+
+body {
+    padding: 20px;
+}
+
+.second-level {
+    margin: 0px 40px;
+}
+
+.third-level {
+    margin: 0px 40px;   
+}
+
+#non-visible {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+}

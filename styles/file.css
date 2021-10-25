@@ -1,0 +1,15 @@
+.file {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.file::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    background-image: url("../images/movie_black_24dp.svg");
+}

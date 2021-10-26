@@ -10,9 +10,9 @@ const changeChildrenVisibility = (parent, hide) => {
         };
         
         if (hide){
-            parent.children[x].id = "non-visible";
+            parent.children[x].classList.add("non-visible");
         }else{
-            parent.children[x].id = "visible";
+            parent.children[x].classList.remove("non-visible");
         }
     };
 };

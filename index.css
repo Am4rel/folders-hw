@@ -13,7 +13,7 @@ body {
     margin: 0px 40px;   
 }
 
-#non-visible {
+div.non-visible, p.non-visible {
     display: none;
     visibility: hidden;
     position: absolute;
